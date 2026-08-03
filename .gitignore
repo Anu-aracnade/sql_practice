@@ -1,0 +1,5 @@
+# Ignore local VS Code configuration and connection info
+.vscode/
+
+# Ignore any temporary query execution results or session files
+*.session.sql
