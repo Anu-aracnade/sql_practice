@@ -1,0 +1,13 @@
+create table Students(Student_ID integer, Student_Name varchar(50),Department varchar (50), Semester integer, Age integer);
+DESCRIBE Students; 
+drop table student;
+drop table Students;
+insert into Students(Student_ID, Student_Name, Department, Semester, Age) values (101, 'Vansh', 'ECE', 5, 20);
+insert into Students(Student_ID, Student_Name, Department, Semester, Age) values (102, 'Sankha', 'CSE', 3, 19);
+insert into Students(Student_ID, Student_Name, Department, Semester, Age) values (103,'Ayush', 'ME', 2, 18);
+insert into Students(Student_ID, Student_Name, Department, Semester, Age) values (104, 'Rohak', 'IT', 4, 20);
+insert into Students(Student_ID, Student_Name, Department, Semester, Age) values (105, 'Ansh', 'ECE', 5, 20);
+select * from Students;
+select Student_Name, Department, Semester from Students where Student_Name like '%sh';
+update Students set Semester = 4 where Semester = 3;
+select * from Students where Student_ID = 102;
